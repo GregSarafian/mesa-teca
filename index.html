@@ -227,8 +227,8 @@ const haptics = new WebHaptics();
 const btn = document.querySelector('.logo-button');
 btn.addEventListener('click', () => {
   haptics.trigger([
-    { duration: 500, intensity: 0.73 },
-    { delay: 30, duration: 50, intensity: 0.31 },
+    { duration: 900, intensity: 0.55 },
+    { delay: 50, duration: 50, intensity: 1 },
   ]);
   btn.classList.remove('playing');
   void btn.offsetWidth;
