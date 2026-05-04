@@ -226,6 +226,7 @@ import { WebHaptics } from '/vendor/web-haptics/index.mjs';
 const haptics = new WebHaptics();
 
 const btn = document.querySelector('.logo-button');
+btn.addEventListener('touchstart', () => {}, { passive: true });
 btn.addEventListener('click', () => {
   haptics.trigger([
     { duration: 900, intensity: 0.55 },
